@@ -1,0 +1,28 @@
+.superInput {
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.input{
+    border: 2px solid;
+    border-radius: 4px;
+}
+.errorInput {
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border: 3px solid crimson;
+    color: #ff200b
+}
+
+.error {
+    color: red;
+    font-family: "Cooper Black";
+}
