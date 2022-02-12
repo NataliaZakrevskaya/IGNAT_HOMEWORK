@@ -1,3 +1,12 @@
 .App {
 
 }
+
+.appHeader {
+    background-color: #4246ff;
+    text-align: center;
+    font-family: "Cooper Black";
+    font-size: xx-large;
+    color: white;
+    border-radius: 8px;
+}

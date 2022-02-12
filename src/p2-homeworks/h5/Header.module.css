@@ -1,0 +1,23 @@
+.navLinkBlock {
+    position: relative;
+    left: -210px;
+    width: 260px;
+    background: darkred;
+    color: white;
+    margin-top: 5px;
+    transition: left .4s linear;
+    border-radius: 3px;
+}
+
+.navLinkBlock:hover {
+    left: 0px;
+}
+
+.links {
+    color: white;
+    margin-right: 8px;
+}
+.links:hover {
+    color: #ffe06b;
+    margin-right: 8px;
+}
