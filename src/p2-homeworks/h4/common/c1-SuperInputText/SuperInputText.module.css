@@ -1,28 +1,28 @@
+.input{
+    border: 2px solid;
+    border-radius: 4px;
+}
+
 .superInput {
     font-size: 16px;
     padding: 10px;
     display: block;
     width: 300px;
     border: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 2px solid ;
     margin-bottom: 10px;
 }
-.input{
-    border: 2px solid;
-    border-radius: 4px;
-}
+
 .errorInput {
     font-size: 16px;
     padding: 10px;
     display: block;
     width: 300px;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    border: 3px solid crimson;
-    color: #ff200b
+    border: 3px solid #e74c3c;
 }
 
 .error {
-    color: red;
-    font-family: "Cooper Black";
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: x-large;
 }

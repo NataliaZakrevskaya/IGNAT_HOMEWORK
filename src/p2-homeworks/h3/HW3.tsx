@@ -20,7 +20,7 @@ function HW3() {
     }
 
     return (
-        <div  className={style.container}>
+        <div className={style.container}>
 
             <h2 className={style.commonHeader}>HOMEWORK 3</h2>
 
