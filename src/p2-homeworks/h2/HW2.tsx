@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Affairs from './Affairs'
+import style from "./../../common/Common.module.css"
 
 // types
 export type AffairPriorityType = 'high' | 'middle' | 'low'
@@ -47,21 +48,20 @@ function HW2() {
     const deleteAffairCallback = (_id: number) => setAffairs(deleteAffair(affairs, _id))
 
     return (
-        <div>
-            <hr/>
-            homeworks 2
+        <div className={style.container}>
+            <h2 className={style.commonHeader}>HOMEWORK 2</h2>
+
 
             {/*should work (должно работать)*/}
             <Affairs
                 data={filteredAffairs}
                 setFilter={setFilter}
+                filter={filter}
                 deleteAffairCallback={deleteAffairCallback}
             />
 
-            <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeAffairs/>*/}
-            <hr/>
         </div>
     )
 }

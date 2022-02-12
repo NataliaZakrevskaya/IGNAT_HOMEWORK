@@ -17,8 +17,7 @@ const messageData = [{
 }]
 function HW1() {
     return (
-        <div>
-            <hr/>
+        <div className={style.container}>
             <h2 className={style.commonHeader}>HOMEWORK 1</h2>
 
             {/*should work (должно работать)*/}
@@ -37,7 +36,6 @@ function HW1() {
                 message={messageData[1].message}
                 time={messageData[1].time}
             />
-            <hr/>
         </div>
     )
 }
