@@ -10,6 +10,10 @@
     align-items: center;
 }
 
+.affair span {
+    font-weight: bold;
+}
+
 .affairName {
     width: 100px;
 }
