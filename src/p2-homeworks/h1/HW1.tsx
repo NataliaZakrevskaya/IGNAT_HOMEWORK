@@ -10,7 +10,7 @@ const messageData = [{
         time: '22:00',
     } ,
     {
-    avatar: 'https://cdn-icons.flaticon.com/png/512/4113/premium/4113022.png?token=exp=1644688156~hmac=ff46e46d92c23131706166e0bdedd3ad',
+    avatar: 'https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/344/external-avatar-fitness-and-gym-xnimrodx-lineal-color-xnimrodx.png',
     name: 'Lena Petrova',
     message: 'Good! How are you?)',
     time: '22:01',

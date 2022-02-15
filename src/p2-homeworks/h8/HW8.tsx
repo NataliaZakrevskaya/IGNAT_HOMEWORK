@@ -21,7 +21,6 @@ export const initialPeople: UserType[] = [
 
 function HW8() {
     const [people, setPeople] = useState<UserType[]>(initialPeople)
-    console.log(people)
 
     const finalPeople = people.map((p: UserType) => (
         <div key={p._id} className={s.userString}>
@@ -34,7 +33,7 @@ function HW8() {
     const checkAge = () => setPeople(homeWorkReducer(initialPeople, {type: 'check', payload: 18}))
 
     return (
-        <div className={`${style.container} ${s.commonStyleForContainer}`}>
+        <div className={`${style.container} ${s.privateStyleForContainer}`}>
             <h2 className={style.commonHeader}>HOMEWORK 8</h2>
 
             <div>{finalPeople}</div>

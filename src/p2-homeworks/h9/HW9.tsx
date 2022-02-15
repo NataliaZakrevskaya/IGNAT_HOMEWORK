@@ -1,19 +1,18 @@
 import React from 'react'
 import Clock from './Clock'
+import style from "./../../common/Common.module.css"
+import s from "./PrivateStyles.module.css"
 
 function HW9() {
     return (
-        <div>
-            <hr/>
-            homeworks 9
+        <div className={s.privateStyleForContainer}>
+            <h2 className={style.commonHeader}>homeworks 9</h2>
 
             {/*should work (должно работать)*/}
             <Clock/>
 
-            <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeClock/>*/}
-            <hr/>
         </div>
     )
 }
