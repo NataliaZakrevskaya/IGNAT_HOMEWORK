@@ -3,6 +3,10 @@ import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import {useDispatch, useSelector} from "react-redux";
 import {AppStoreType} from "./bll/store";
 import {loadingAC} from "./bll/loadingReducer";
+import {CircularProgress} from "@mui/material";
+import style from "../../common/Common.module.css";
+import s from "./Preloader.module.css"
+
 
 function HW10() {
     const dispatch = useDispatch()
@@ -15,14 +19,15 @@ function HW10() {
     };
 
     return (
-        <div>
-            <hr/>
-            homeworks 10
+        <div className={s.mainContainer}>
+            <h2 className={style.commonHeader}>HOMEWORK 10</h2>
+
 
             {/*should work (должно работать)*/}
+
             {isLoading
                 ? (
-                    <div>крутилка...</div>
+                    <CircularProgress />
                 ) : (
                     <div>
                         <SuperButton onClick={setLoading}>set loading...</SuperButton>
@@ -30,10 +35,8 @@ function HW10() {
                 )
             }
 
-            <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<Alternative/>*/}
-            <hr/>
         </div>
     )
 }
