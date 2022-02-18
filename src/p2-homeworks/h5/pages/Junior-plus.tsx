@@ -1,12 +1,10 @@
 import React from 'react'
 
-
 export function JuniorPlus() {
     return (
         <div>
-            <h1>JuniorPlus</h1>
-            {/*<HW11/>
-            <HW12/>*/}
+
+            {/*<HW12/>*/}
         </div>
     )
 }
