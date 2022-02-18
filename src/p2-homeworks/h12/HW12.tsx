@@ -1,24 +1,35 @@
 import React from "react";
 import s from "./HW12.module.css";
+import {useDispatch, useSelector} from "react-redux";
+import {AppStoreType} from "../h10/bll/store";
+import {changeThemeC} from "./bll/themeReducer";
+import SuperSelect from "../h7/common/c5-SuperSelect/SuperSelect";
 
 const themes = ['dark', 'red', 'some'];
 
 function HW12() {
-    const theme = 'some'; // useSelector
+    // const theme = 'red'; // useSelector
+    const theme = useSelector<AppStoreType, string>(state => state.theme.theme) // useSelector
 
-    // useDispatch, onChangeCallback
+    const dispatch = useDispatch()
+
+    const onChangeCallback = (themeValue: 'dark' | 'red' | 'some') => {
+        dispatch(changeThemeC(themeValue))
+    }
 
     return (
         <div className={s[theme]}>
-            <hr/>
-            <span className={s[theme + '-text']}>
+            <h2 className={s[theme + '-text']}>
                 homeworks 12
-            </span>
-
+            </h2>
+            <SuperSelect
+            options={themes}
+            value={theme}
+            onChangeOption={onChangeCallback}
+            />
             {/*should work (должно работать)*/}
             {/*SuperSelect or SuperRadio*/}
 
-            <hr/>
         </div>
     );
 }

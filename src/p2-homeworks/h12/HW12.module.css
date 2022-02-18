@@ -4,6 +4,9 @@
 
 .dark-text {
     color: aliceblue;
+    text-align: center;
+    font-family: "Cooper Black";
+    font-size: x-large;
 }
 
 .red {
@@ -12,6 +15,9 @@
 
 .red-text {
     color: aqua;
+    text-align: center;
+    font-family: "Cooper Black";
+    font-size: x-large;
 }
 
 .some {
@@ -20,4 +26,7 @@
 
 .some-text {
     color: darkslateblue;
+    text-align: center;
+    font-family: "Cooper Black";
+    font-size: x-large;
 }
